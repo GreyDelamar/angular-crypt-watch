@@ -1,9 +1,11 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 
 import { TableComponent } from './table';
+
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
@@ -18,7 +20,8 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
     TableComponent
   ],
   imports: [
-    homeRouting
+    homeRouting,
+    BrowserModule
   ],
   providers: []
 })
